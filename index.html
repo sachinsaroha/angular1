@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Angular</title>
+</head>
+<body ng-app="myApp">
+	<script type="text/javascript" src="library/angular.min.js"></script>
+	<script type="text/javascript" src="app/app.js"></script>
+
+
+ 	<div ng-controller="myController">
+
+ 		<input type="submit" ng-show='!toggle' ng-click='show()' value='Show'>
+
+ 		<p ng-show='toggle' ng-repeat = 'customer in customers'>{{customer.name}} -- {{customer.age}}</p>
+
+ 		<input type="submit" ng-show='toggle' ng-click='hide()' value='Hide'>
+
+ 		
+ 	</div>
+ 	
+
+	
+
+</body>
+</html>
