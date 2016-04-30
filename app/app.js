@@ -2,7 +2,7 @@ var app = angular.module('myApp', []);
 
 app.controller('myController', [ '$scope', function($scope){
 
-	$scope.toggle= false;
+	$scope.toggle= true;
 
 	$scope.customers = [
 						{'name':'Ross', 'age':'29'},
