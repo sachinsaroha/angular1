@@ -11,8 +11,9 @@
  	<div ng-controller="myController">
 
  		<input type="submit" ng-show='!toggle' ng-click='show()' value='Show'>
+ 		<input type="text" ng-model="searchTerm">
 
- 		<p ng-show='toggle' ng-repeat = 'customer in customers'>{{customer.name}} -- {{customer.age}}</p>
+ 		<p ng-show='toggle' ng-repeat = 'customer in customers | filter:searchTerm'>{{customer.name}} -- {{customer.age}}</p>
 
  		<input type="submit" ng-show='toggle' ng-click='hide()' value='Hide'>
 
